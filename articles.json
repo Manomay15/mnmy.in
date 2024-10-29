@@ -1,0 +1,14 @@
+[
+    {
+        "title": "My First Article",
+        "content": "This is the content of my first article. Here you can add text, links, and more.",
+        "images": ["image1.jpg", "image2.jpg"],
+        "id": "article1"
+    },
+    {
+        "title": "Another Interesting Topic",
+        "content": "This is the content of another article. Add as much text as you like here.",
+        "images": ["image3.jpg"],
+        "id": "article2"
+    }
+]
