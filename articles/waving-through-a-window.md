@@ -27,4 +27,4 @@ While I'm watch, watch, watching people pass
 Waving through a window, oh  
 Can anybody see, is anybody waving back at me?”
 
-[Watch the video here](https://www.youtube.com/watch?v=W9T6dS8EdE8)
+[![Watch the video here](https://img.youtube.com/vi/x_CNqKA2t9M/0.jpg)](https://www.youtube.com/watch?v=x_CNqKA2t9M)
