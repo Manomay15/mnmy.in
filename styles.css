@@ -9,6 +9,8 @@ body, html {
 
 p {
     text-align: left;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 .outer-layer {
     /* background-color: #f0f0f0; Background color for outer layer */
@@ -78,7 +80,7 @@ nav a:hover {
 
 .article-preview p {
     margin: 0;
-    color: #555;
+    color: #000000;
     text-align: left;
 }
 
@@ -88,6 +90,8 @@ nav a:hover {
 
 .article-item {
     margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
     padding: 15px;
     border-bottom: 1px solid #ddd;
     background-color: #f8f8f8;
@@ -99,13 +103,13 @@ nav a:hover {
 }
 
 .article-item p {
-    color: #555;
+    color: #000000;
 }
 
 
 
 a {
-    color: #0066cc;
+    color: #001d3f;
     text-decoration: none;
 }
 
