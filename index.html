@@ -3,28 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - Mano Ya Na Mano</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Link to CSS -->
+    <title>Mano Ya Na Mano</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="outer-layer">
         <div class="content-layer">
             <header>
-                <h1>Welcome</h1>
+                <h1>Manomay</h1>
                 <nav>
-                    <a href="index.html">Home</a>
-                    <a href="about.html">About Me</a>
-                    <a href="writeup.html">Write Up</a>
+                    <a href="index.html">Home</a> |
+                    <a href="pictures.html">Pictures</a> |
+                    <a href="writeups.html">Write Ups</a>
                 </nav>
             </header>
-
-            <section id="latest-articles">
+            <br>
+            <hr>
+            <!-- Section to display article previews -->
+            <section id="article-previews">
                 <h2>Latest</h2>
-                <!-- JavaScript will dynamically load articles here -->
+                <!-- Previews will be dynamically inserted here -->
             </section>
         </div>
     </div>
 
-    <script src="script.js"></script> <!-- Link to JavaScript -->
+    <!-- Include Showdown.js -->
+    <script src="https://cdn.jsdelivr.net/npm/showdown@1.9.1/dist/showdown.min.js"></script>
+    <script src="loadPreviews.js"></script>
+    <script src="loadMarkdown.js"></script>
 </body>
 </html>
