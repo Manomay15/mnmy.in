@@ -15,8 +15,11 @@ async function loadMarkdown(filename) {
         document.title = titleLine; // Set the <title>
         document.getElementById("article-title").textContent = titleLine; // Set the <h1>
 
+        // Remove the title line from the Markdown content
+        const contentWithoutTitle = lines.slice(1).join('\n'); // Join all lines except the first
+
         // Convert the markdown to HTML and display it
-        const html = converter.makeHtml(markdown);
+        const html = converter.makeHtml(contentWithoutTitle);
         document.getElementById("article-content").innerHTML = html;
     } catch (error) {
         document.getElementById("article-content").innerHTML = "Error loading article.";

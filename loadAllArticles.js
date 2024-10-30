@@ -1,13 +1,11 @@
-// loadPreviews.js
+// loadAllArticles.js
 
 const converter = new showdown.Converter();
 
-// Array of the latest three article filenames
-
-// new-article-change
+// List of all article filenames
 const articles = ["waving-through-a-window.md", "mirror.md", "attempt.md"];
 
-async function loadArticlePreview(filename) {
+async function loadArticleList(filename) {
     try {
         const response = await fetch(`articles/${filename}`);
         const markdown = await response.text();
@@ -17,23 +15,23 @@ async function loadArticlePreview(filename) {
         const title = lines[0].replace(/^#\s*/, ''); // Remove leading '#' for the title
         const previewText = lines.slice(1).join(' ').substring(0, 300) + '...';
 
-        // Convert preview to HTML and create preview element
+        // Convert the preview to HTML
         const previewHtml = converter.makeHtml(previewText);
         const articleLink = `article.html?file=${filename}`;
 
-        const previewElement = document.createElement("div");
-        previewElement.className = "article-preview";
-        previewElement.innerHTML = `
+        const articleElement = document.createElement("div");
+        articleElement.className = "article-item";
+        articleElement.innerHTML = `
             <h3><a href="${articleLink}">${title}</a></h3>
             <p>${previewHtml}</p>
         `;
 
-        // Append to article previews section
-        document.getElementById("article-previews").appendChild(previewElement);
+        // Append to the all-articles section
+        document.getElementById("all-articles").appendChild(articleElement);
     } catch (error) {
-        console.error(`Failed to load preview for ${filename}:`, error);
+        console.error(`Failed to load article ${filename}:`, error);
     }
 }
 
-// Load previews for all articles
-articles.forEach(loadArticlePreview);
+// Load each article in the list
+articles.forEach(loadArticleList);
