@@ -3,31 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Write Ups</title>
+    <title>Map</title> <!-- Placeholder title -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="outer-layer">
         <div class="content-layer">
             <header>
-                <h1><a href="index.html" style="color: black;">All Write Ups</a></h1>
+                <h1 id="article-title">Map</h1>
                 <nav>
-                    <a href="me.html">About Me</a> |
+                    <a href="index.html">About Me</a> |
                     <a href="pictures.html">Pictures</a> |
                     <a href="writeups.html">Write Ups</a> |
                     <a href="map.html">Map</a>
                 </nav>
             </header>
             <br><hr>
+            <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1FEazuJYU0hKyDv9cY5RhNzvMfspDR4U&ehbc=2E312F&noprof=1" width="780" height="480"></iframe>
 
-            <section id="all-articles">
-                <!-- Articles will be dynamically inserted here -->
-            </section>
+            <section id="article-content"></section>
         </div>
     </div>
 
-    <!-- Include Showdown.js for Markdown to HTML conversion -->
-    <script src="https://cdn.jsdelivr.net/npm/showdown@1.9.1/dist/showdown.min.js"></script>
-    <script src="loadAllArticles.js"></script>
 </body>
 </html>
