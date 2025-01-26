@@ -3,7 +3,7 @@
 const converter = new showdown.Converter();
 
 // List of all article filenames
-const articles = ["waving-through-a-window.md", "mirror.md", "attempt.md", "ocean.md", "internet.md"];
+const articles = ["social-exp.md", "waving-through-a-window.md", "mirror.md", "attempt.md", "ocean.md", "internet.md"];
 
 async function loadArticleList(filename) {
     try {
