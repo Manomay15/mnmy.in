@@ -5,7 +5,7 @@ const converter = new showdown.Converter();
 // Array of the latest three article filenames
 
 // new-article-change
-const articles = ["waving-through-a-window.md", "mirror.md", "attempt.md"];
+const articles = ["road.md", "waving-through-a-window.md", "mirror.md"];
 
 async function loadArticlePreview(filename) {
     try {
